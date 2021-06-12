@@ -1,6 +1,6 @@
 # Template file for 'konqueror'
 pkgname=konqueror
-version=20.12.3
+version=21.04.1
 revision=1
 build_style=cmake
 configure_args="-DDESKTOPTOJSON_EXECUTABLE=/usr/bin/desktoptojson"
@@ -14,11 +14,7 @@ maintainer="Orphaned <orphan@voidlinux.org>"
 license="GPL-2.0-or-later, LGPL-2.1-or-later"
 homepage="https://kde.org/applications/internet/org.kde.konqueror"
 distfiles="${KDE_SITE}/release-service/${version}/src/konqueror-${version}.tar.xz"
-checksum=472491923e677815e11e6fe9cd8c8919dc52d37b7350eaad82adfbb203bed2f8
-
-pre_check() {
-	export QT_QPA_PLATFORM=offscreen
-}
+checksum=cf1987573b4efd8510525cc88d36eab33e76e95e0c3166e11c29ad3d00dab726
 
 do_check() {
 	:

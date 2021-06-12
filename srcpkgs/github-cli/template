@@ -1,6 +1,6 @@
 # Template file for 'github-cli'
 pkgname=github-cli
-version=1.8.0
+version=1.11.0
 revision=1
 wrksrc="cli-${version}"
 build_style=go
@@ -13,7 +13,7 @@ license="MIT"
 homepage="https://cli.github.com"
 changelog="https://github.com/cli/cli/releases"
 distfiles="https://github.com/cli/cli/archive/v${version}.tar.gz"
-checksum=13576c42a0cb1486370b876eccebe498c1ef84868893ae41a1f717229be4d6bb
+checksum=0b6654a8868363100c4c954377d77a71df04496b2da005f6db1ad765eb44a93f
 
 pre_build() {
 	local _date

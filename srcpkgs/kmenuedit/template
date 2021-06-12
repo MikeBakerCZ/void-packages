@@ -1,6 +1,6 @@
 # Template file for 'kmenuedit'
 pkgname=kmenuedit
-version=5.21.3
+version=5.22.0
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
@@ -10,7 +10,7 @@ makedepends="kdelibs4support-devel kdesignerplugin-devel kdoctools"
 depends="khotkeys"
 short_desc="KDE Menu editor"
 maintainer="John <me@johnnynator.dev>"
-license="GPL-2"
+license="GPL-2.0-or-later"
 homepage="https://invent.kde.org/plasma/kmenuedit"
 distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
-checksum=524aeb87739b0320bcd38551b367cff017c26a830669de7c91aaaa10a8d28339
+checksum=810efc35661b45c61f521fc878251ccc5b290bed1109451a50c58a89c72d9f3f

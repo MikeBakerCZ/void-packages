@@ -1,6 +1,6 @@
 # Template file for 'stremio-shell'
 pkgname=stremio-shell
-version=4.4.134
+version=4.4.137
 revision=1
 _singleapplication_hash=4aeac8fa3e7e96385ba556346ebb6020e35ffdd8
 _libmpv_hash=822a41a1087daf2911fc336fbd9509f962158fef
@@ -19,11 +19,11 @@ distfiles="https://github.com/Stremio/stremio-shell/archive/v${version}.tar.gz
  https://github.com/Ivshti/libmpv/archive/${_libmpv_hash}.tar.gz
  https://dl.strem.io/four/v${version}/server.js
  https://dl.strem.io/four/v${version}/stremio.asar"
-checksum="d332ce065f7c214e3bcbd556d41e265a4fe8e76dec4960051f17bd971de6da37
+checksum="094c8e1afcb59bd67606d51b0088d7b1c85a6a9c22add08c3152abd5ff74f385
  b5066c6dab3a35459a01b839e3e1c3b1d6d1cb70e83bd245110cd1c86476aa32
  e0545772ca819236926eb118c2f211f05e01f510c1c1a89758895919ed5718d4
- afcef98cbbefcac0d7a9e30a7d1285be83262a83723e982b6116d8854d16a880
- 08cb738d9d1a4104a1181bf56ebcaf43008ac37cb8943c70736113c6fb6823df"
+ 7a722fc1315f03f43179070f0ad5a63e4f4b99b677537b72e92c15a5b277f988
+ c3f86982bff1e359be8c815adf1728fa6b12adb0194fcec68dd774227bf21db5"
 skip_extraction="server.js stremio.asar"
 
 post_extract() {

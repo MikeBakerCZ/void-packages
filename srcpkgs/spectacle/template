@@ -1,6 +1,6 @@
 # Template file for 'spectacle'
 pkgname=spectacle
-version=20.12.3
+version=21.04.2
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
@@ -14,4 +14,4 @@ maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later, GPL-2.0-or-later"
 homepage="https://kde.org/applications/en/utilities/org.kde.spectacle"
 distfiles="${KDE_SITE}/release-service/${version}/src/${pkgname}-${version}.tar.xz"
-checksum=4ce20ea1a81be1ec81c3917fc12e3c904cd95e58d559d56bd3d3bd2a15e149c0
+checksum=614d2b78a7cbb771e579de4401602b6f41403b40c8c034238df74dfe814feb6c

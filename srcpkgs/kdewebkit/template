@@ -1,6 +1,6 @@
 # Template file for 'kdewebkit'
 pkgname=kdewebkit
-version=5.80.0
+version=5.82.0
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
@@ -12,7 +12,7 @@ maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later"
 homepage="https://invent.kde.org/frameworks/kdewebkit"
 distfiles="${KDE_SITE}/frameworks/${version%.*}/portingAids/${pkgname}-${version}.tar.xz"
-checksum=917defa04b29407e8b89daedb16e1fe5dfdc1b116811b5b9815faa2a78ea0687
+checksum=1fa2400c0605fa3b0e2dc7de9515290488e06406aea7325f964dc2ee61378910
 
 kdewebkit-devel_package() {
 	short_desc+=" - development"

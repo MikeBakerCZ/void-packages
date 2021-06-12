@@ -1,6 +1,6 @@
 # Template file for 'systemsettings'
 pkgname=systemsettings
-version=5.21.3
+version=5.22.0
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
@@ -11,7 +11,7 @@ makedepends="kcmutils-devel kdoctools khtml-devel kactivities5-stats-devel
 depends="kirigami2 setxkbmap xrdb"
 short_desc="KDE System settings"
 maintainer="John <me@johnnynator.dev>"
-license="GPL-2.0-or-later, GFDL-1.2"
+license="GPL-2.0-or-later, GFDL-1.2-only"
 homepage="https://invent.kde.org/plasma/systemsettings"
 distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
-checksum=1d9518fa792970859d49965209138ee9944a9e1db00ed2eea3337481c4a3d623
+checksum=668e69eecc5f7dc83d3e796c4233cc81696cda398d034c1adf490e4bafb9d9ef

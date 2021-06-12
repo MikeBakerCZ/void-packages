@@ -1,6 +1,6 @@
 # Template file for 'libkgapi'
 pkgname=libkgapi
-version=20.12.3
+version=21.04.2
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt5-host-tools qt5-qmake python3
@@ -12,7 +12,7 @@ maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/pim/libkgapi"
 distfiles="${KDE_SITE}/release-service/${version}/src/${pkgname}-${version}.tar.xz"
-checksum=fd668411c3d1e9f65237d15d884efd5cfb7cae0a90fa517bcf833f3980653941
+checksum=493385657f3d68fc62f03a7b5332d533198e0e09f82c75d42a73c6af6623ca86
 
 do_check() {
 	:

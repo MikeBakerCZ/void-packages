@@ -1,6 +1,6 @@
 # Template file for 'libvirt'
 pkgname=libvirt
-version=7.1.0
+version=7.4.0
 revision=1
 build_style=meson
 configure_args="-Dqemu_user=libvirt -Dqemu_group=libvirt -Drunstatedir=/run"
@@ -19,7 +19,7 @@ license="LGPL-2.1-or-later"
 homepage="https://libvirt.org"
 changelog="https://libvirt.org/news.html"
 distfiles="https://libvirt.org/sources/${pkgname}-${version}.tar.xz"
-checksum=870f180d80256411c5afc39bc5aac4f8acca04a4e0725c576ad24053dc64a06c
+checksum=b366d73dee6ce77a226bedef592e0620ceb8e22e5998f60768017f79fc4ead26
 
 # FIX https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=701649
 system_accounts="libvirt"

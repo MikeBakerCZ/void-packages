@@ -1,9 +1,9 @@
 # Template file for 'nss'
 
-_nsprver=4.29
+_nsprver=4.30
 
 pkgname=nss
-version=3.63
+version=3.66
 revision=1
 hostmakedepends="perl"
 makedepends="nspr-devel sqlite-devel zlib-devel"
@@ -13,7 +13,7 @@ maintainer="Đoàn Trần Công Danh <congdanhqx@gmail.com>"
 license="MPL-2.0"
 homepage="https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS"
 distfiles="${MOZILLA_SITE}/security/nss/releases/NSS_${version//\./_}_RTM/src/nss-${version}.tar.gz"
-checksum=182d2fef629102ae9423aabf2c192242b565cf5098e82c5a26cf70c5e4ea2221
+checksum=89a79e3a756cf0ac9ba645f4d4c0fc58d4133134401fb0b6c8a74c420bb4cdc9
 
 export NS_USE_GCC=1
 export LIBRUNPATH=
@@ -44,10 +44,13 @@ do_build() {
 		*) export NSS_DISABLE_AVX2=1 ;;
 	esac
 
-	# it's actually VSX, so disable on all BE ppc
 	case "$XBPS_TARGET_MACHINE" in
 		ppc64le*) ;;
-		ppc*) export NSS_DISABLE_ALTIVEC=1 ;;
+		ppc64*) export NSS_DISABLE_CRYPTO_VSX=1 ;;
+		ppc*)
+			export NSS_DISABLE_CRYPTO_VSX=1
+			export NSS_DISABLE_ALTIVEC=1
+			;;
 	esac
 
 	cd nss

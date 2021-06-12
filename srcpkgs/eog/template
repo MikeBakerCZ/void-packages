@@ -1,6 +1,6 @@
 # Template file for 'eog'
 pkgname=eog
-version=3.38.2
+version=40.1
 revision=1
 build_helper="gir"
 build_style=meson
@@ -14,7 +14,7 @@ maintainer="Enno Boland <gottox@voidlinux.org>"
 license="GPL-2.0-or-later"
 homepage="https://wiki.gnome.org/Apps/EyeOfGnome"
 distfiles="${GNOME_SITE}/eog/${version%.*}/eog-${version}.tar.xz"
-checksum=8a54fdf93e306a0f64853a18831ac8c0483820477106aae0bdc00aac37386f0e
+checksum=7be086037fed9b6bf84bac97a83e3c918301b7e9c96af130b27252d0a5111689
 shlib_provides="libeog.so"
 lib32disabled=yes
 

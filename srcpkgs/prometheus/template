@@ -1,6 +1,6 @@
 # Template file for 'prometheus'
 pkgname=prometheus
-version=2.24.1
+version=2.26.1
 revision=1
 build_style=go
 go_import_path="github.com/prometheus/prometheus"
@@ -18,7 +18,7 @@ license="Apache-2.0"
 homepage="https://prometheus.io/"
 changelog="https://raw.githubusercontent.com/prometheus/prometheus/master/CHANGELOG.md"
 distfiles="https://github.com/prometheus/prometheus/archive/v${version}.tar.gz"
-checksum=9e08bacde869c6c4b68a9e34c7074b812be1391b33d033d3072a5e1ad2debd87
+checksum=d13750d67aac825f9b213875c586db69533f57bcaf68f6a87592f9e4cea946ac
 
 system_accounts="_prometheus"
 

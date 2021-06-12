@@ -1,6 +1,6 @@
 # Template file for 'croc'
 pkgname=croc
-version=8.6.12
+version=9.1.4
 revision=1
 build_style=go
 go_import_path=github.com/schollz/croc/v${version%%.*}
@@ -10,7 +10,7 @@ maintainer="Benjamín Albiñana <benalb@gmail.com>"
 license="MIT"
 homepage="https://github.com/schollz/croc"
 distfiles="https://github.com/schollz/croc/archive/v${version}.tar.gz"
-checksum=8596a70226437178cd87f271d6ad275d6ba391917b1a09c429bc9dc65f446ed4
+checksum=6a7d304f06c6824c9648a588a5c6b9f7366d87a442dc536e810a078a4441c9dd
 
 post_install() {
 	vlicense LICENSE

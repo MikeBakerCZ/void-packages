@@ -1,9 +1,9 @@
 # Template file for 'chezmoi'
 pkgname=chezmoi
-version=2.0.5
+version=2.0.13
 revision=1
 build_style=go
-go_import_path="github.com/twpayne/chezmoi"
+go_import_path="github.com/twpayne/chezmoi/v2"
 go_build_tags="noembeddocs noupgrade"
 go_ldflags="-X main.version=${version} -X main.commit=v${version} -X main.builtBy=xbps
  -X github.com/twpayne/chezmoi/cmd.DocsDir=/usr/share/doc/chezmoi"
@@ -13,7 +13,7 @@ maintainer="Abigail G <dev@kb6.ee>"
 license="MIT"
 homepage="https://chezmoi.io/"
 distfiles="https://github.com/twpayne/chezmoi/archive/v${version}.tar.gz"
-checksum=36f52b8a519f43a64a3317920259eb43b183ad103302c6a3c8056ee3416fd4b4
+checksum=819fc3d86ea3dee8bad45887720f7cdfa106eb56fa4132a0d682cbac3a48e834
 
 post_install() {
 	vlicense LICENSE
